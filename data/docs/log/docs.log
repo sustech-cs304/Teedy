@@ -1,0 +1,185 @@
+19 3月 2024 22:55:52,983 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+19 3月 2024 22:55:53,373 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+19 3月 2024 22:55:53,374 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:83) Unable to get database version: Table T_CONFIG not found 
+19 3月 2024 22:55:53,374 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:98) Executing initial schema creation script 
+19 3月 2024 22:55:53,377 INFO com.sismics.util.jpa.DbOpenHelper.executeAllScript(DbOpenHelper.java:142) Executing script: dbupdate-000-0.sql 
+19 3月 2024 22:55:53,413 INFO com.sismics.util.jpa.DbOpenHelper.executeAllScript(DbOpenHelper.java:142) Executing script: dbupdate-000-1.sql 
+19 3月 2024 22:55:53,416 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 0, new version is 27, executing database incremental update scripts 
+19 3月 2024 22:55:53,417 INFO com.sismics.util.jpa.DbOpenHelper.executeAllScript(DbOpenHelper.java:142) Executing script: dbupdate-001-0.sql 
+19 3月 2024 22:55:53,435 INFO com.sismics.util.jpa.DbOpenHelper.executeAllScript(DbOpenHelper.java:142) Executing script: dbupdate-002-0.sql 
+19 3月 2024 22:55:53,438 INFO com.sismics.util.jpa.DbOpenHelper.executeAllScript(DbOpenHelper.java:142) Executing script: dbupdate-003-0.sql 
+19 3月 2024 22:55:53,442 INFO com.sismics.util.jpa.DbOpenHelper.executeAllScript(DbOpenHelper.java:142) Executing script: dbupdate-004-0.sql 
+19 3月 2024 22:55:53,449 INFO com.sismics.util.jpa.DbOpenHelper.executeAllScript(DbOpenHelper.java:142) Executing script: dbupdate-005-0.sql 
+19 3月 2024 22:55:53,450 INFO com.sismics.util.jpa.DbOpenHelper.executeAllScript(DbOpenHelper.java:142) Executing script: dbupdate-006-0.sql 
+19 3月 2024 22:55:53,537 INFO com.sismics.util.jpa.DbOpenHelper.executeAllScript(DbOpenHelper.java:142) Executing script: dbupdate-007-0.sql 
+19 3月 2024 22:55:53,539 INFO com.sismics.util.jpa.DbOpenHelper.executeAllScript(DbOpenHelper.java:142) Executing script: dbupdate-008-0.sql 
+19 3月 2024 22:55:53,565 INFO com.sismics.util.jpa.DbOpenHelper.executeAllScript(DbOpenHelper.java:142) Executing script: dbupdate-009-0.sql 
+19 3月 2024 22:55:53,568 INFO com.sismics.util.jpa.DbOpenHelper.executeAllScript(DbOpenHelper.java:142) Executing script: dbupdate-010-0.sql 
+19 3月 2024 22:55:53,569 INFO com.sismics.util.jpa.DbOpenHelper.executeAllScript(DbOpenHelper.java:142) Executing script: dbupdate-011-0.sql 
+19 3月 2024 22:55:53,571 INFO com.sismics.util.jpa.DbOpenHelper.executeAllScript(DbOpenHelper.java:142) Executing script: dbupdate-012-0.sql 
+19 3月 2024 22:55:53,574 INFO com.sismics.util.jpa.DbOpenHelper.executeAllScript(DbOpenHelper.java:142) Executing script: dbupdate-013-0.sql 
+19 3月 2024 22:55:53,575 INFO com.sismics.util.jpa.DbOpenHelper.executeAllScript(DbOpenHelper.java:142) Executing script: dbupdate-014-0.sql 
+19 3月 2024 22:55:53,577 INFO com.sismics.util.jpa.DbOpenHelper.executeAllScript(DbOpenHelper.java:142) Executing script: dbupdate-015-0.sql 
+19 3月 2024 22:55:53,582 INFO com.sismics.util.jpa.DbOpenHelper.executeAllScript(DbOpenHelper.java:142) Executing script: dbupdate-016-0.sql 
+19 3月 2024 22:55:53,583 INFO com.sismics.util.jpa.DbOpenHelper.executeAllScript(DbOpenHelper.java:142) Executing script: dbupdate-017-0.sql 
+19 3月 2024 22:55:53,584 INFO com.sismics.util.jpa.DbOpenHelper.executeAllScript(DbOpenHelper.java:142) Executing script: dbupdate-018-0.sql 
+19 3月 2024 22:55:53,593 INFO com.sismics.util.jpa.DbOpenHelper.executeAllScript(DbOpenHelper.java:142) Executing script: dbupdate-019-0.sql 
+19 3月 2024 22:55:53,594 INFO com.sismics.util.jpa.DbOpenHelper.executeAllScript(DbOpenHelper.java:142) Executing script: dbupdate-020-0.sql 
+19 3月 2024 22:55:53,595 INFO com.sismics.util.jpa.DbOpenHelper.executeAllScript(DbOpenHelper.java:142) Executing script: dbupdate-021-0.sql 
+19 3月 2024 22:55:53,598 INFO com.sismics.util.jpa.DbOpenHelper.executeAllScript(DbOpenHelper.java:142) Executing script: dbupdate-022-0.sql 
+19 3月 2024 22:55:53,606 INFO com.sismics.util.jpa.DbOpenHelper.executeAllScript(DbOpenHelper.java:142) Executing script: dbupdate-023-0.sql 
+19 3月 2024 22:55:53,694 INFO com.sismics.util.jpa.DbOpenHelper.executeAllScript(DbOpenHelper.java:142) Executing script: dbupdate-024-0.sql 
+19 3月 2024 22:55:53,699 INFO com.sismics.util.jpa.DbOpenHelper.executeAllScript(DbOpenHelper.java:142) Executing script: dbupdate-025-0.sql 
+19 3月 2024 22:55:53,700 INFO com.sismics.util.jpa.DbOpenHelper.executeAllScript(DbOpenHelper.java:142) Executing script: dbupdate-026-0.sql 
+19 3月 2024 22:55:53,700 INFO com.sismics.util.jpa.DbOpenHelper.executeAllScript(DbOpenHelper.java:142) Executing script: dbupdate-027-0.sql 
+19 3月 2024 22:55:53,701 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+19 3月 2024 22:55:53,701 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+19 3月 2024 22:55:54,576 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+19 3月 2024 22:55:54,598 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:115) Using RAM Lucene storage 
+19 3月 2024 22:55:54,671 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+19 3月 2024 22:55:54,673 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:55) Inbox service starting up 
+19 3月 2024 22:56:44,634 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 2 classes for AuthenticationHandler 
+19 3月 2024 22:59:47,157 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:221) Processing started for file: 4bd12a36-90e7-473c-82da-add95797b583 
+19 3月 2024 22:59:47,163 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:53) File created event: FileCreatedAsyncEvent{fileId=4bd12a36-90e7-473c-82da-add95797b583, language=null} 
+19 3月 2024 22:59:47,282 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 7 classes for FormatHandler 
+19 3月 2024 22:59:49,698 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:170) Unable to generate thumbnails for: File{id=4bd12a36-90e7-473c-82da-add95797b583, name=本科生作业承诺书-2.docx} 
+java.lang.UnsatisfiedLinkError: no lcms in system library path: /opt/homebrew/Cellar/openjdk/21.0.1/libexec/openjdk.jdk/Contents/Home/lib
+	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2432)
+	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:916)
+	at java.base/java.lang.System.loadLibrary(System.java:2059)
+	at java.desktop/sun.java2d.cmm.lcms.LCMS$1.run(LCMS.java:159)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:319)
+	at java.desktop/sun.java2d.cmm.lcms.LCMS.getModule(LCMS.java:152)
+	at java.desktop/sun.java2d.cmm.lcms.LcmsServiceProvider.getModule(LcmsServiceProvider.java:34)
+	at java.desktop/sun.java2d.cmm.CMMServiceProvider.getColorManagementModule(CMMServiceProvider.java:31)
+	at java.desktop/sun.java2d.cmm.CMSManager.createModule(CMSManager.java:63)
+	at java.desktop/sun.java2d.cmm.CMSManager.getModule(CMSManager.java:40)
+	at java.desktop/java.awt.color.ICC_ColorSpace.toRGB(ICC_ColorSpace.java:207)
+	at org.apache.pdfbox.pdmodel.graphics.color.PDDeviceRGB.init(PDDeviceRGB.java:68)
+	at org.apache.pdfbox.pdmodel.graphics.color.PDDeviceRGB.toRGBImage(PDDeviceRGB.java:108)
+	at org.apache.pdfbox.pdmodel.PDDocument.<clinit>(PDDocument.java:108)
+	at com.sismics.docs.core.util.format.PdfFormatHandler.generateThumbnail(PdfFormatHandler.java:39)
+	at com.sismics.docs.core.util.format.DocxFormatHandler.generateThumbnail(DocxFormatHandler.java:37)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:150)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:56)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:87)
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:72)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+19 3月 2024 22:59:49,701 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=4bd12a36-90e7-473c-82da-add95797b583, name=本科生作业承诺书-2.docx} 
+19 3月 2024 22:59:49,701 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:180) Error extracting content from: File{id=4bd12a36-90e7-473c-82da-add95797b583, name=本科生作业承诺书-2.docx} 
+java.lang.NoClassDefFoundError: Could not initialize class org.apache.pdfbox.pdmodel.PDDocument
+	at com.sismics.docs.core.util.format.PdfFormatHandler.extractContent(PdfFormatHandler.java:49)
+	at com.sismics.docs.core.util.format.DocxFormatHandler.extractContent(DocxFormatHandler.java:43)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:178)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:56)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:87)
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:72)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.UnsatisfiedLinkError: no lcms in system library path: /opt/homebrew/Cellar/openjdk/21.0.1/libexec/openjdk.jdk/Contents/Home/lib [in thread "pool-1-thread-1"]
+	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2432)
+	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:916)
+	at java.base/java.lang.System.loadLibrary(System.java:2059)
+	at java.desktop/sun.java2d.cmm.lcms.LCMS$1.run(LCMS.java:159)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:319)
+	at java.desktop/sun.java2d.cmm.lcms.LCMS.getModule(LCMS.java:152)
+	at java.desktop/sun.java2d.cmm.lcms.LcmsServiceProvider.getModule(LcmsServiceProvider.java:34)
+	at java.desktop/sun.java2d.cmm.CMMServiceProvider.getColorManagementModule(CMMServiceProvider.java:31)
+	at java.desktop/sun.java2d.cmm.CMSManager.createModule(CMSManager.java:63)
+	at java.desktop/sun.java2d.cmm.CMSManager.getModule(CMSManager.java:40)
+	at java.desktop/java.awt.color.ICC_ColorSpace.toRGB(ICC_ColorSpace.java:207)
+	at org.apache.pdfbox.pdmodel.graphics.color.PDDeviceRGB.init(PDDeviceRGB.java:68)
+	at org.apache.pdfbox.pdmodel.graphics.color.PDDeviceRGB.toRGBImage(PDDeviceRGB.java:108)
+	at org.apache.pdfbox.pdmodel.PDDocument.<clinit>(PDDocument.java:108)
+	at com.sismics.docs.core.util.format.PdfFormatHandler.generateThumbnail(PdfFormatHandler.java:39)
+	at com.sismics.docs.core.util.format.DocxFormatHandler.generateThumbnail(DocxFormatHandler.java:37)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:150)
+	... 9 more
+19 3月 2024 22:59:49,703 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 2ms: 4bd12a36-90e7-473c-82da-add95797b583 
+19 3月 2024 22:59:49,804 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:231) Processing ended for file: 4bd12a36-90e7-473c-82da-add95797b583 
+19 3月 2024 23:00:06,790 INFO com.sismics.docs.core.listener.async.DocumentCreatedAsyncListener.on(DocumentCreatedAsyncListener.java:35) Document created event: DocumentCreatedAsyncEvent{documentId=04009efa-d2ac-4ac9-8f1c-42abbbfd8f9d} 
+19 3月 2024 23:00:06,824 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:221) Processing started for file: 4bd12a36-90e7-473c-82da-add95797b583 
+19 3月 2024 23:00:06,826 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:67) File updated event: FileUpdatedAsyncEvent{fileId=4bd12a36-90e7-473c-82da-add95797b583, language=eng} 
+19 3月 2024 23:00:06,826 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=04009efa-d2ac-4ac9-8f1c-42abbbfd8f9d} 
+19 3月 2024 23:00:06,888 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:170) Unable to generate thumbnails for: File{id=4bd12a36-90e7-473c-82da-add95797b583, name=本科生作业承诺书-2.docx} 
+java.lang.NoClassDefFoundError: Could not initialize class org.apache.pdfbox.pdmodel.PDDocument
+	at com.sismics.docs.core.util.format.PdfFormatHandler.generateThumbnail(PdfFormatHandler.java:39)
+	at com.sismics.docs.core.util.format.DocxFormatHandler.generateThumbnail(DocxFormatHandler.java:37)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:150)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:87)
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:72)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.UnsatisfiedLinkError: no lcms in system library path: /opt/homebrew/Cellar/openjdk/21.0.1/libexec/openjdk.jdk/Contents/Home/lib [in thread "pool-1-thread-1"]
+	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2432)
+	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:916)
+	at java.base/java.lang.System.loadLibrary(System.java:2059)
+	at java.desktop/sun.java2d.cmm.lcms.LCMS$1.run(LCMS.java:159)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:319)
+	at java.desktop/sun.java2d.cmm.lcms.LCMS.getModule(LCMS.java:152)
+	at java.desktop/sun.java2d.cmm.lcms.LcmsServiceProvider.getModule(LcmsServiceProvider.java:34)
+	at java.desktop/sun.java2d.cmm.CMMServiceProvider.getColorManagementModule(CMMServiceProvider.java:31)
+	at java.desktop/sun.java2d.cmm.CMSManager.createModule(CMSManager.java:63)
+	at java.desktop/sun.java2d.cmm.CMSManager.getModule(CMSManager.java:40)
+	at java.desktop/java.awt.color.ICC_ColorSpace.toRGB(ICC_ColorSpace.java:207)
+	at org.apache.pdfbox.pdmodel.graphics.color.PDDeviceRGB.init(PDDeviceRGB.java:68)
+	at org.apache.pdfbox.pdmodel.graphics.color.PDDeviceRGB.toRGBImage(PDDeviceRGB.java:108)
+	at org.apache.pdfbox.pdmodel.PDDocument.<clinit>(PDDocument.java:108)
+	at com.sismics.docs.core.util.format.PdfFormatHandler.generateThumbnail(PdfFormatHandler.java:39)
+	at com.sismics.docs.core.util.format.DocxFormatHandler.generateThumbnail(DocxFormatHandler.java:37)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:150)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:56)
+	... 7 more
+19 3月 2024 23:00:06,889 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=4bd12a36-90e7-473c-82da-add95797b583, name=本科生作业承诺书-2.docx} 
+19 3月 2024 23:00:06,889 ERROR com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:180) Error extracting content from: File{id=4bd12a36-90e7-473c-82da-add95797b583, name=本科生作业承诺书-2.docx} 
+java.lang.NoClassDefFoundError: Could not initialize class org.apache.pdfbox.pdmodel.PDDocument
+	at com.sismics.docs.core.util.format.PdfFormatHandler.extractContent(PdfFormatHandler.java:49)
+	at com.sismics.docs.core.util.format.DocxFormatHandler.extractContent(DocxFormatHandler.java:43)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:178)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:87)
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:72)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.UnsatisfiedLinkError: no lcms in system library path: /opt/homebrew/Cellar/openjdk/21.0.1/libexec/openjdk.jdk/Contents/Home/lib [in thread "pool-1-thread-1"]
+	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2432)
+	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:916)
+	at java.base/java.lang.System.loadLibrary(System.java:2059)
+	at java.desktop/sun.java2d.cmm.lcms.LCMS$1.run(LCMS.java:159)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:319)
+	at java.desktop/sun.java2d.cmm.lcms.LCMS.getModule(LCMS.java:152)
+	at java.desktop/sun.java2d.cmm.lcms.LcmsServiceProvider.getModule(LcmsServiceProvider.java:34)
+	at java.desktop/sun.java2d.cmm.CMMServiceProvider.getColorManagementModule(CMMServiceProvider.java:31)
+	at java.desktop/sun.java2d.cmm.CMSManager.createModule(CMSManager.java:63)
+	at java.desktop/sun.java2d.cmm.CMSManager.getModule(CMSManager.java:40)
+	at java.desktop/java.awt.color.ICC_ColorSpace.toRGB(ICC_ColorSpace.java:207)
+	at org.apache.pdfbox.pdmodel.graphics.color.PDDeviceRGB.init(PDDeviceRGB.java:68)
+	at org.apache.pdfbox.pdmodel.graphics.color.PDDeviceRGB.toRGBImage(PDDeviceRGB.java:108)
+	at org.apache.pdfbox.pdmodel.PDDocument.<clinit>(PDDocument.java:108)
+	at com.sismics.docs.core.util.format.PdfFormatHandler.generateThumbnail(PdfFormatHandler.java:39)
+	at com.sismics.docs.core.util.format.DocxFormatHandler.generateThumbnail(DocxFormatHandler.java:37)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:150)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.processFile(FileProcessingAsyncListener.java:104)
+	at com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:56)
+	... 7 more
+19 3月 2024 23:00:06,890 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 0ms: 4bd12a36-90e7-473c-82da-add95797b583 
+19 3月 2024 23:00:06,894 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:231) Processing ended for file: 4bd12a36-90e7-473c-82da-add95797b583 
