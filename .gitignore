@@ -19,3 +19,4 @@ docs/*
 
 #macos
 .DS_Store
+data/docs/log/docs.log
