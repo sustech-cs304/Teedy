@@ -5,7 +5,6 @@
     "validation_code_required": "请输入验证码",
     "validation_code_title": "您的帐号已经激活了双身份验证. 请输入您配置手机app的提供的验证码.",
     "validation_code": "验证码",
-    "remember_me": "记住我",
     "submit": "登录",
     "login_as_guest": "以游客身份登录",
     "login_failed_title": "登录失败",
