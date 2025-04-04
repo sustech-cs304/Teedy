@@ -84,6 +84,19 @@
   <build>
     <plugins>
       <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-pmd-plugin</artifactId>
+          <version>3.21.2</version>
+          <configuration>
+              <rulesets>
+                  <ruleset>pmd-ruleset.xml</ruleset>
+              </rulesets>
+              <failOnViolation>true</failOnViolation>
+          </configuration>
+      </plugin>
+
+
+      <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-antrun-plugin</artifactId>
         <version>${org.apache.maven.plugins.maven-antrun-plugin.version}</version>
@@ -116,6 +129,13 @@
         <artifactId>jetty-maven-plugin</artifactId>
         <version>${org.eclipse.jetty.jetty-maven-plugin.version}</version>
       </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-site-plugin</artifactId>
+        <version>3.12.1</version>  <!-- 最新版本，可能要检查官网 -->
+      </plugin>
+
     </plugins>
   </build>
 
@@ -490,5 +510,22 @@
 
     </dependencies>
   </dependencyManagement>
+
+  <reporting>
+      <plugins>
+          <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-pmd-plugin</artifactId>
+              <version>3.21.2</version>
+              <reportSets>
+                  <reportSet>
+                      <reports>
+                          <report>pmd</report>
+                      </reports>
+                  </reportSet>
+              </reportSets>
+          </plugin>
+      </plugins>
+  </reporting>
 
 </project>

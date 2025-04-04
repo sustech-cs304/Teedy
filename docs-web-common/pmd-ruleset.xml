@@ -1,0 +1,25 @@
+<ruleset name="Custom PMD Ruleset"
+    xmlns="https://pmd.github.io/ruleset/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://pmd.github.io/ruleset/2.0.0 https://pmd.github.io/ruleset_2_0_0.xsd">
+    
+    <description>Custom PMD ruleset for code quality analysis in Teedy.</description>
+
+    <!-- Lines of Code -->
+    <rule ref="category/java/design.xml/ExcessiveMethodLength"/>
+    <rule ref="category/java/design.xml/ExcessiveClassLength"/>
+
+    <!-- Cyclomatic Complexity -->
+    <rule ref="category/java/complexity.xml/CyclomaticComplexity"/>
+
+    <!-- Weighted Methods per Class -->
+    <rule ref="category/java/design.xml/TooManyMethods"/>
+
+    <!-- Coupling Between Objects -->
+    <rule ref="category/java/design.xml/CouplingBetweenObjects"/>
+
+    <!-- Lack of Cohesion in Methods -->
+    <rule ref="category/java/design.xml/LackOfCohesionInMethods"/>
+    <rule ref="category/java/design.xml/LooseCoupling"/>
+
+</ruleset>
