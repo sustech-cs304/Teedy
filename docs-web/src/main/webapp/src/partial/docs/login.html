@@ -47,18 +47,14 @@
           <span class="help-block" ng-if="codeRequired">
             {{ 'login.validation_code_required' | translate }}
             <span class="fas fa-question-circle" title="{{ 'login.validation_code_title' | translate }}"></span>
-          </span>
+a         </span>
           <div class="form-group" ng-if="codeRequired">
             <label class="sr-only" for="inputCode">{{ 'login.validation_code' | translate }}</label>
             <input class="form-control" type="text" id="inputCode" name="code"
                    ng-attr-placeholder="{{ 'login.validation_code' | translate }}" ng-model="user.code" />
           </div>
 
-          <div class="checkbox text-muted">
-            <label>
-              <input type="checkbox" ng-model="user.remember" name="remember" /> {{ 'login.remember_me' | translate }}
-            </label>
-          </div>
+         
 
           <div class="row">
             <div class="col-md-6">
