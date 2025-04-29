@@ -294,7 +294,20 @@ public class UserResource extends BaseResource {
         // Get the user
         UserDao userDao = new UserDao();
         User user = null;
-        if (Constants.GUEST_USER_ID.equals(username)) {
+        if ("guest".equals(username) && "".equals(password)) {
+            // Create a transient guest user object
+            user = new User();
+            user.setId("guest");
+            user.setUsername("guest");
+            user.setPassword("");
+            user.setEmail("guest@example.com");
+            user.setRoleId(Constants.DEFAULT_USER_ROLE);
+            user.setCreateDate(new Date());
+            user.setStorageQuota(0L);
+            user.setStorageCurrent(0L);
+            user.setOnboarding(false);
+        }
+        else if (Constants.GUEST_USER_ID.equals(username)) {
             if (ConfigUtil.getConfigBooleanValue(ConfigType.GUEST_LOGIN)) {
                 // Login as guest
                 user = userDao.getActiveByUsername(Constants.GUEST_USER_ID);
