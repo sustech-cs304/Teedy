@@ -197,7 +197,15 @@
       <artifactId>h2</artifactId>
       <scope>test</scope>
     </dependency>
+
   </dependencies>
+
+  <distributionManagement>
+    <site>
+      <id>site-docs</id>
+      <url>file://${project.build.directory}/site</url>
+    </site>
+  </distributionManagement>
 
   <profiles>
     <!-- Development profile (active by default) -->

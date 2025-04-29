@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<ruleset name="Custom Metrics Ruleset"
+         xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
+
+    <description>
+        Custom ruleset focusing on code quality metrics
+    </description>
+
+    <!-- Lines of Code (LoC) -->
+    <rule ref="category/java/design.xml/NcssCount" />
+
+    <!-- Cyclomatic Complexity -->
+    <rule ref="category/java/design.xml/CyclomaticComplexity">
+        <properties>
+            <property name="reportLevel" value="10" />
+        </properties>
+    </rule>
+
+    <!-- Weighted Methods per Class (WMC) -->
+    <rule ref="category/java/design.xml/TooManyMethods"/>
+
+    <!-- Coupling Between Objects (CBO) -->
+    <rule ref="category/java/design.xml/CouplingBetweenObjects" >
+        <properties>
+            <property name="threshold" value="10" />
+        </properties>
+    </rule>
+
+    <!-- Lack of Cohesion in Methods (LCOM) -->
+    <rule ref="category/java/design.xml/GodClass" />
+</ruleset>
