@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<ruleset name="Custom PMD Rules"
+    xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0
+                        http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
+
+    <description>Custom PMD ruleset for code metrics analysis</description>
+
+    <!-- 使用新式规则路径 -->
+    <rule ref="category/java/codestyle.xml"/>
+    <rule ref="category/java/design.xml"/>
+    <rule ref="category/java/bestpractices.xml"/>
+
+    <!-- 1. 代码行数（LoC） -->
+    <rule ref="category/java/codestyle.xml/MethodLength">
+        <properties>
+            <property name="max" value="50"/>  <!-- 设置方法最大行数为50 -->
+        </properties>
+    </rule>
+
+    <!-- 2. 圈复杂度（CC） -->
+    <rule ref="category/java/design.xml/CyclomaticComplexity">
+        <properties>
+            <property name="reportLevel" value="10"/>
+        </properties>
+    </rule>
+
+    <!-- 3. 方法数量（WMC） -->
+    <rule ref="category/java/design.xml/TooManyMethods">
+        <properties>
+            <property name="maxmethods" value="20"/>
+        </properties>
+    </rule>
+
+    <!-- 4. 对象耦合度（CBO） -->
+    <rule ref="category/java/design.xml/CouplingBetweenObjects">
+        <properties>
+            <property name="threshold" value="10"/>
+        </properties>
+    </rule>
+
+    <!-- 5. 方法内聚性（LCOM） -->
+    <rule ref="category/java/design.xml/GodClass"/>
+</ruleset>
