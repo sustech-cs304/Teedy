@@ -3,7 +3,7 @@
 /**
  * File modal view controller.
  */
-angular.module('docs').controller('FileModalView', function ($uibModalInstance, $scope, $state, $stateParams, $sce, Restangular, $transitions) {
+angular.module('docs').controller('FileModalView', function ($uibModalInstance, $scope, $state, $stateParams, $sce, Restangular, $transitions, $uibModal, $translate) {
   var setFile = function (files) {
     // Search current file
     _.each(files, function (value) {
@@ -72,12 +72,76 @@ angular.module('docs').controller('FileModalView', function ($uibModalInstance, 
       $state.go('^.file', { id: $stateParams.id, fileId: previous.id });
     }
   };
+  
+  /**
+   * Check if file needs special handling
+   */
+  $scope.needsSpecialHandling = function() {
+    if (!$scope.file) return false;
+    
+    var mimetype = $scope.file.mimetype;
+    var filename = $scope.file.name.toLowerCase();
+    
+    // Check for PDF files
+    if (mimetype === 'application/pdf') {
+      return true;
+    }
+    
+    // Check for DOC/DOCX files
+    if (mimetype === 'application/msword' || 
+        mimetype === 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' ||
+        filename.endsWith('.doc') || 
+        filename.endsWith('.docx')) {
+      return true;
+    }
+    
+    return false;
+  };
+  
+  /**
+   * Show warning dialog for special file types
+   */
+  $scope.showSpecialFileWarning = function(callback) {
+    $uibModal.open({
+      template: '<div class="modal-header">' +
+                '<h3 class="modal-title">{{ \'file.view.special_handling_title\' | translate }}</h3>' +
+                '</div>' +
+                '<div class="modal-body">' +
+                '<p>{{ \'file.view.special_handling_message\' | translate:{ fileType: fileType } }}</p>' +
+                '<p>{{ \'file.view.special_handling_question\' | translate }}</p>' +
+                '</div>' +
+                '<div class="modal-footer">' +
+                '<button class="btn btn-default" ng-click="$dismiss()">{{ \'file.view.special_handling_cancel\' | translate }}</button>' +
+                '<button class="btn btn-primary" ng-click="$close(true)">{{ \'file.view.special_handling_continue\' | translate }}</button>' +
+                '</div>',
+      controller: function($scope, $uibModalInstance, fileType) {
+        $scope.fileType = fileType;
+      },
+      resolve: {
+        fileType: function() {
+          if ($scope.file.mimetype === 'application/pdf') {
+            return 'PDF';
+          } else {
+            return 'Word';
+          }
+        }
+      }
+    }).result.then(callback);
+  };
 
   /**
    * Open the file in a new window.
    */
   $scope.openFile = function () {
-    window.open('../api/file/' + $stateParams.fileId + '/data');
+    if ($scope.needsSpecialHandling()) {
+      $scope.showSpecialFileWarning(function() {
+        // User confirmed, open the file
+        window.open('../api/file/' + $stateParams.fileId + '/data');
+      });
+    } else {
+      // Open the file directly for other types
+      window.open('../api/file/' + $stateParams.fileId + '/data');
+    }
   };
 
   /**
@@ -91,10 +155,22 @@ angular.module('docs').controller('FileModalView', function ($uibModalInstance, 
    * Print the file.
    */
   $scope.printFile = function () {
-    var popup = window.open('../api/file/' + $stateParams.fileId + '/data', '_blank');
-    popup.onload = function () {
-      popup.print();
-      popup.close();
+    if ($scope.needsSpecialHandling()) {
+      $scope.showSpecialFileWarning(function() {
+        // User confirmed, print the file
+        var popup = window.open('../api/file/' + $stateParams.fileId + '/data', '_blank');
+        popup.onload = function () {
+          popup.print();
+          popup.close();
+        }
+      });
+    } else {
+      // Print the file directly for other types
+      var popup = window.open('../api/file/' + $stateParams.fileId + '/data', '_blank');
+      popup.onload = function () {
+        popup.print();
+        popup.close();
+      }
     }
   };
 

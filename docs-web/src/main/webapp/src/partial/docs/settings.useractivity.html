@@ -52,6 +52,9 @@
     <h3 class="panel-title" translate="settings.useractivity.gantt_chart"></h3>
   </div>
   <div class="panel-body">
+    <div class="alert alert-info">
+      <p><strong>使用提示:</strong> 甘特图按事件类型分组显示活动。消息中包含"document"或"file"的事件显示为<span style="color: #f0ad4e;">黄色</span>，包含"found"的事件显示为<span style="color: #d9534f;">红色</span>（不区分大小写）。点击任意活动查看详细信息。</p>
+    </div>
     <div id="ganttChart" style="width:100%; height:400px;"></div>
   </div>
 </div>
@@ -65,6 +68,7 @@
         <th>{{ 'settings.useractivity.entity_name' | translate }}</th>
         <th>{{ 'settings.useractivity.type' | translate }}</th>
         <th>{{ 'settings.useractivity.message' | translate }}</th>
+        <th>操作</th>
       </tr>
     </thead>
     <tbody>
@@ -74,9 +78,14 @@
         <td>{{ activity.entity }}</td>
         <td>{{ activity.type }}</td>
         <td>{{ activity.message }}</td>
+        <td>
+          <button class="btn btn-xs btn-default" ng-click="openActivityDetails(activity)">
+            <span class="fas fa-search-plus"></span> 查看
+          </button>
+        </td>
       </tr>
       <tr ng-if="activities.length === 0">
-        <td colspan="5" class="text-center">{{ 'settings.useractivity.no_activities' | translate }}</td>
+        <td colspan="6" class="text-center">{{ 'settings.useractivity.no_activities' | translate }}</td>
       </tr>
     </tbody>
   </table>

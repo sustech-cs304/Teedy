@@ -202,7 +202,12 @@
     "view": {
       "previous": "Previous",
       "next": "Next",
-      "not_found": "File not found"
+      "not_found": "File not found",
+      "special_handling_title": "File Type Notice",
+      "special_handling_message": "You are about to open a {{fileType}} file. This file type may contain macros or other content that could potentially be harmful.",
+      "special_handling_question": "Do you want to continue?",
+      "special_handling_continue": "Continue",
+      "special_handling_cancel": "Cancel"
     },
     "edit": {
       "title": "Edit file",
@@ -214,6 +219,12 @@
       "mimetype": "Type",
       "create_date": "Creation date",
       "version": "Version"
+    },
+    "rename": {
+      "title": "File rename",
+      "placeholder": "New file name",
+      "submit": "Rename",
+      "message": "File successfully renamed"
     }
   },
   "tag": {
