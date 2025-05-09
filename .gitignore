@@ -19,3 +19,5 @@ docs/*
 
 #macos
 .DS_Store
+
+apidoc-backup/

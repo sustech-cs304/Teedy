@@ -202,7 +202,12 @@
     "view": {
       "previous": "Previous",
       "next": "Next",
-      "not_found": "File not found"
+      "not_found": "File not found",
+      "special_handling_title": "File Type Notice",
+      "special_handling_message": "You are about to open a {{fileType}} file. This file type may contain macros or other content that could potentially be harmful.",
+      "special_handling_question": "Do you want to continue?",
+      "special_handling_continue": "Continue",
+      "special_handling_cancel": "Cancel"
     },
     "edit": {
       "title": "Edit file",
@@ -214,6 +219,12 @@
       "mimetype": "Type",
       "create_date": "Creation date",
       "version": "Version"
+    },
+    "rename": {
+      "title": "File rename",
+      "placeholder": "New file name",
+      "submit": "Rename",
+      "message": "File successfully renamed"
     }
   },
   "tag": {
@@ -277,10 +288,11 @@
     "menu_groups": "Groups",
     "menu_vocabularies": "Vocabularies",
     "menu_configuration": "Configuration",
-    "menu_inbox": "Inbox scanning",
-    "menu_ldap": "LDAP authentication",
+    "menu_inbox": "Inbox",
+    "menu_ldap": "LDAP",
     "menu_metadata": "Custom metadata",
     "menu_monitoring": "Monitoring",
+    "menu_useractivity": "User Activities",
     "ldap": {
       "title": "LDAP authentication",
       "enabled": "Enable LDAP authentication",
@@ -468,7 +480,10 @@
       "indexing": "Indexing",
       "indexing_info": "If you notice discrepancies in the search results, you can try to do a full reindexing. Search results will be incomplete until this operation is done.",
       "start_reindexing": "Start full reindexing",
-      "reindexing_started": "Re-indexing started, please wait until there is no more background tasks."
+      "reindexing_started": "Re-indexing started, please wait until there is no more background tasks.",
+      "title": "Monitoring",
+      "free_memory": "Free memory",
+      "total_memory": "Total memory"
     },
     "session": {
       "title": "Opened sessions",
@@ -501,6 +516,26 @@
       "line_3": "Your files will be imported in documents according to the file importer configuration.",
       "download": "Download",
       "instructions": "Instructions"
+    },
+    "useractivity": {
+      "title": "User Activities Dashboard",
+      "date_range": "Date Range",
+      "dashboard": "Activity Overview",
+      "gantt_chart": "User Activities Gantt Chart",
+      "recent_activity": "Recent Activity",
+      "username": "Username",
+      "entity_name": "Resource",
+      "type": "Activity Type",
+      "date": "Date",
+      "message": "Details",
+      "no_activities": "No activities in selected date range",
+      "download_csv": "Download CSV",
+      "user_filter": "Filter by User",
+      "all_users": "All Users",
+      "resource_filter": "Filter by Resource",
+      "all_resources": "All Resources",
+      "activity_type_filter": "Filter by Activity Type",
+      "all_types": "All Types"
     }
   },
   "feedback": {

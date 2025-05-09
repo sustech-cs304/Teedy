@@ -1,0 +1,92 @@
+<!-- Admin dashboard of user activities -->
+<h2 translate="settings.useractivity.title"></h2>
+
+<div class="row mb-10">
+  <div class="col-xs-12 col-sm-6 col-md-4">
+    <div class="input-group">
+      <span class="input-group-addon"><span class="fas fa-calendar"></span></span>
+      <input type="text" class="form-control" 
+             datepicker-popup="yyyy-MM-dd" 
+             datepicker-append-to-body="true"
+             ng-model="startDate" 
+             is-open="startDateOpened"
+             ng-click="startDateOpened = true" 
+             placeholder="开始日期"
+             close-text="{{ 'directive.datepicker.close' | translate }}"
+             current-text="{{ 'directive.datepicker.current' | translate }}"
+             clear-text="{{ 'directive.datepicker.clear' | translate }}" />
+      <span class="input-group-addon">-</span>
+      <input type="text" class="form-control" 
+             datepicker-popup="yyyy-MM-dd" 
+             datepicker-append-to-body="true"
+             ng-model="endDate" 
+             is-open="endDateOpened"
+             ng-click="endDateOpened = true" 
+             placeholder="结束日期"
+             close-text="{{ 'directive.datepicker.close' | translate }}"
+             current-text="{{ 'directive.datepicker.current' | translate }}"
+             clear-text="{{ 'directive.datepicker.clear' | translate }}" />
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-sm-6 col-md-4">
+    <select class="form-control" ng-model="userFilter">
+      <option value="">{{ 'settings.useractivity.all_users' | translate }}</option>
+      <option ng-repeat="user in users" value="{{ user }}">{{ user }}</option>
+    </select>
+  </div>
+
+  <div class="col-xs-12 col-sm-12 col-md-4">
+    <button class="btn btn-primary" ng-click="loadActivities()">
+      <span class="fas fa-search"></span> {{ 'search' | translate }}
+    </button>
+    <button class="btn btn-default" ng-click="downloadCsv()">
+      <span class="fas fa-download"></span> {{ 'settings.useractivity.download_csv' | translate }}
+    </button>
+  </div>
+</div>
+
+<!-- Gantt chart panel -->
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title" translate="settings.useractivity.gantt_chart"></h3>
+  </div>
+  <div class="panel-body">
+    <div class="alert alert-info">
+      <p><strong>使用提示:</strong> 甘特图按事件类型分组显示活动。消息中包含"document"或"file"的事件显示为<span style="color: #f0ad4e;">黄色</span>，包含"found"的事件显示为<span style="color: #d9534f;">红色</span>（不区分大小写）。点击任意活动查看详细信息。</p>
+    </div>
+    <div id="ganttChart" style="width:100%; height:400px;"></div>
+  </div>
+</div>
+
+<div class="table-responsive">
+  <table class="table table-striped table-hover">
+    <thead>
+      <tr>
+        <th>{{ 'settings.useractivity.date' | translate }}</th>
+        <th>{{ 'settings.useractivity.username' | translate }}</th>
+        <th>{{ 'settings.useractivity.entity_name' | translate }}</th>
+        <th>{{ 'settings.useractivity.type' | translate }}</th>
+        <th>{{ 'settings.useractivity.message' | translate }}</th>
+        <th>操作</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="activity in activities">
+        <td>{{ activity.date | date: dateTimeFormat }}</td>
+        <td>{{ activity.username }}</td>
+        <td>{{ activity.entity }}</td>
+        <td>{{ activity.type }}</td>
+        <td>{{ activity.message }}</td>
+        <td>
+          <button class="btn btn-xs btn-default" ng-click="openActivityDetails(activity)">
+            <span class="fas fa-search-plus"></span> 查看
+          </button>
+        </td>
+      </tr>
+      <tr ng-if="activities.length === 0">
+        <td colspan="6" class="text-center">{{ 'settings.useractivity.no_activities' | translate }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div> 
